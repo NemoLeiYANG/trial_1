@@ -1,3 +1,7 @@
+# wholesome_slam + Lidar Odometry package
+- git: {local-name: wholesome_robotics, uri: 'https://github.com/aadityasaraiya/trial_1.git', version: master}
+
+
 # ceres solver package
 - git: {local-name: ceres-solver, uri: 'https://ceres-solver.googlesource.com/ceres-solver', version: master}
 
