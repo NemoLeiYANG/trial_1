@@ -1,0 +1,41 @@
+#v1************************************************************************************
+# This is developed at Carnegie Mellon University in collaboration with Autel Robotics 
+#                                                                                      
+# PI:                                                                                  
+# George Kantor                                                                        
+#                                                                                      
+# Authors:                                                                              
+# Weizhao Shao                                                                         
+# Cong Li                                                                              
+# Srinivasan Vijayarangan                                                              
+#                                                                                      
+# Please refer to the contract document for details on license/copyright information.  
+#**************************************************************************************
+#lidar point registration
+odom_topic: "/smart_smoother/odom_imu"  
+#odom_topic: /vins_estimator/imu_propagate
+lidar_topic: "/velodyne16/velodyne_points"
+line_seg_num: 6
+max_edge_num: 10
+edge_threshold: 0.1
+max_surf_num: 20
+scan_period: 0.100
+
+#scan to map matching
+map_matching_scan: 1
+#L-M parameter
+
+Lambda: 0
+min_error: 1e-3
+bis_weight: 0.1 #bisquare weight
+
+_correspondence_thresh_: 1
+
+map_cell_size: 5
+map_edge_voxel_size: 0.2
+map_plane_voxel_size: 0.2
+full_map_voxel_size: 0.001
+init_distance: 1
+PCD_outdir: "/home/cong/Desktop/highbay_hallway.pcd"
+save_interval: 10000000
+

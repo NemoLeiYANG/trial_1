@@ -1,0 +1,22 @@
+<!-- 
+*v1*************************************************************************************
+* This is developed at Carnegie Mellon University in collaboration with Autel Robotics *
+*                                                                                      *
+* PI:                                                                                  *
+* George Kantor                                                                        *
+*                                                                                      *
+* Authors:                                                                             * 
+* Weizhao Shao                                                                         *
+* Cong Li                                                                              *
+* Srinivasan Vijayarangan                                                              *
+*                                                                                      *
+* Please refer to the contract document for details on license/copyright information.  *
+****************************************************************************************
+-->
+<?xml version="1.0"?>
+<launch>
+<!-- system config file -->
+
+  <node name="lidarScanRegistration" pkg="lidar_odometry" type="lidarScanRegistration" output="screen"/>
+  <node name="scan_to_matching" pkg="lidar_odometry" type="scan_to_matching" output="screen"/>
+</launch>
